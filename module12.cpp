@@ -27,7 +27,7 @@ bool IsDivisible(string& txt, int k) {
     else {
         string pat;
         pat = txt.substr(0, k);
-        int K = (KMPCount(txt, pat) + 1);
+        int K = KMPCount(txt, pat);
         int D = txt.size() / k;
         if (K == D) {
             cout << "Text is divisible by pattern of " << k << endl;
